@@ -10,7 +10,7 @@ $date = Get-Date -Format "yyyyMMdd_HHmmss"
 mkdir "C:\DolibarrBackup\$date" -Force
 
 # Backup database (using correct path and database name)
-& "C:\dolibarr\bin\mariadb\mariadb10.6.5\bin\mysqldump.exe" -u (dbuser) -p -P (dbport) (dbpasswo) > "C:\DolibarrBackup\$date\database.sql"
+"C:\dolibarr\bin\mariadb\mariadb10.6.5\bin\mysqldump.exe" -u db_user -p -P db_port bd_name > "C:\DolibarrBackup\$date\database.sql"
 
 # Backup documents (using correct folder name)
 Copy-Item "C:\dolibarr\dolibarr_documents" "C:\DolibarrBackup\$date\dolibarr_documents" -Recurse
