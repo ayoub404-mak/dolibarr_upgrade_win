@@ -2,7 +2,7 @@
 
 ---
 
-## 📋 COMPLETE WORKING BACKUP SCRIPT (Copy-Paste Ready)
+## COMPLETE WORKING BACKUP SCRIPT (Copy-Paste Ready)
 
 ```powershell
 # Create timestamp and backup folder
@@ -28,7 +28,7 @@ Get-ChildItem "C:\DolibarrBackup\$date" -Recurse | Measure-Object -Property Leng
 
 ---
 
-## 📋 COMPLETE WORKING UPGRADE SCRIPT
+## COMPLETE WORKING UPGRADE SCRIPT
 
 ```powershell
 # STEP 1: Stop services (run as Administrator)
@@ -57,7 +57,7 @@ Write-Host "Complete the upgrade in your browser" -ForegroundColor Yellow
 
 ---
 
-## 📋 COMPLETE WORKING ROLLBACK SCRIPT (if upgrade fails)
+## COMPLETE WORKING ROLLBACK SCRIPT (if upgrade fails)
 
 ```powershell
 # STEP 1: Stop services
@@ -88,7 +88,7 @@ Write-Host "Rollback complete!" -ForegroundColor Green
 
 ---
 
-## ✅ Your Backup Summary
+## Your Backup Summary
 
 | Item | Status | Location |
 |------|--------|----------|
@@ -101,7 +101,7 @@ Write-Host "Rollback complete!" -ForegroundColor Green
 
 ---
 
-## ⚠️ Important Notes for Your Setup
+## Important Notes for Your Setup
 
 1. **Run PowerShell as Administrator** for service commands
 2. **Your installer path:** `C:\Users\hp\Downloads\DoliWamp-16.0.5.exe` (from your last command)
@@ -109,10 +109,3 @@ Write-Host "Rollback complete!" -ForegroundColor Green
 
 ---
 
-## 🚀 Next Step
-
-Run the upgrade with the correct installer path:
-
-```powershell
-Start-Process "C:\Users\hp\Downloads\DoliWamp-16.0.5.exe" -Wait
-```
